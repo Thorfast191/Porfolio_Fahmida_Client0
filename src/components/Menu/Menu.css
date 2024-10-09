@@ -21,7 +21,7 @@
   padding: 15px;
   cursor: pointer;
   font-family: "Great Vibes", cursive; /* Change to your chosen font */
-  font-size: 24px; /* Adjust the size as needed */
+  font-size: 20px; /* Adjust the size as needed */
   color: black; /* Text color */
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Optional shadow for effect */
 }

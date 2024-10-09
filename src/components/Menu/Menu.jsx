@@ -49,28 +49,30 @@ const Menu = ({ hover, onMouseEnter, onMouseLeave }) => {
           </div>
         </>
       ) : (
-        <div className="nav-items">
-          <div className="nav-item">
-            <div className="nav-link">
-              <FcHome />
-            </div>
-            <div className="nav-link">
-              <FcAbout />
-            </div>
-            <div className="nav-link">
-              <FcPortraitMode />
-            </div>
-            <div className="nav-link">
-              <FcReadingEbook />
-            </div>
-            <div className="nav-link">
-              <FcBookmark />
-            </div>
-            <div className="nav-link">
-              <FcBusinessContact />
+        <>
+          <div className="nav-items">
+            <div className="nav-item">
+              <div className="nav-link">
+                <FcHome />
+              </div>
+              <div className="nav-link">
+                <FcAbout />
+              </div>
+              <div className="nav-link">
+                <FcPortraitMode />
+              </div>
+              <div className="nav-link">
+                <FcReadingEbook />
+              </div>
+              <div className="nav-link">
+                <FcBookmark />
+              </div>
+              <div className="nav-link">
+                <FcBusinessContact />
+              </div>
             </div>
           </div>
-        </div>
+        </>
       )}
     </div>
   );

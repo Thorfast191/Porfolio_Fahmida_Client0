@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Home from "../../pages/Home/Home.js";
+import Home from "../../pages/Home/Home.jsx";
 import { AiOutlineDoubleRight } from "react-icons/ai";
 import "./Layout.css";
 import Menu from "../Menu/Menu.jsx";
@@ -36,10 +36,22 @@ const Layout = () => {
               </p> */}
             </div>
           ) : (
-            <div style={{ width: "90px", alignItems: "center" }}>
-              <AiOutlineDoubleRight size={30} />
-              <Menu hover={hover} isCollapsed />
-            </div>
+            <>
+              <div
+                style={{
+                  width: "90px",
+                  display: "flex",
+                  justifyContent: "flex-start",
+                  alignItems: "right",
+                  flexDirection: "column",
+                }}
+              >
+                <AiOutlineDoubleRight size={30} />
+              </div>
+              <div className="menu-icons">
+                <Menu />
+              </div>
+            </>
           )}
         </div>
         <div className="container">

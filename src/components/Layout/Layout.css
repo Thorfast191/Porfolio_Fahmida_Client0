@@ -28,6 +28,16 @@
   margin-top: 10px;
 }
 
+.menu-icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align icons to the left */
+  align-items: center; /* Center icons vertically */
+  height: 100%;
+  padding-top: 2rem;
+  padding-right: 2rem; /* Adjust padding for spacing */
+}
+
 .container {
   margin-left: 90px; /* Initial margin for the collapsed sidebar */
   transition: margin-left 0.3s ease-in-out;
