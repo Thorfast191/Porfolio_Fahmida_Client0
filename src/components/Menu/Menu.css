@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+.navbar-profile-pic img {
+  border-radius: 15px;
+  height: 150px;
+  width: 150px;
+  display: flex;
+  vertical-align: middle;
+  margin: 0 auto;
+  padding-right: 10px;
+  padding-top: 10px;
+  /* margin-top: 20px; */
+}
+
+.nav-item {
+  color: white;
+  /* margin-top: 30px; */
+  margin-left: 25px;
+}
+.nav-link {
+  margin: 20px;
+  padding: 15px;
+  cursor: pointer;
+  font-family: "Great Vibes", cursive; /* Change to your chosen font */
+  font-size: 24px; /* Adjust the size as needed */
+  color: black; /* Text color */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Optional shadow for effect */
+}
+
+.nav-link svg {
+  height: 24px; /* Adjust icon size */
+  width: auto; /* Keep aspect ratio */
+}
+.nav-link:hover {
+  color: #f29f67;
+}
+
+.nav-link .active {
+  color: #f29f67;
+  border-left: 5px solid #f29f67;
+  padding-left: 10px;
+  text-decoration: none;
+}

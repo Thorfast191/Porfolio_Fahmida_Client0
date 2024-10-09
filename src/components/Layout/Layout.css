@@ -1,0 +1,38 @@
+.sidebar-section {
+  display: flex;
+}
+
+.sidebar {
+  height: 100vh;
+  background-color: #ffecb3;
+  width: 90px; /* Initial collapsed width */
+  position: fixed;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 6px 20px rgba(0, 0, 0, 0.2);
+  transition: width 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transition for width */
+}
+
+.sidebar-hover {
+  width: 200px; /* Expanded width on hover */
+}
+
+.sidebar-toggle-icons {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  cursor: pointer;
+}
+
+.sidebar-toggle-icons p svg {
+  background-color: #f29f67;
+  color: white;
+  margin-top: 10px;
+}
+
+.container {
+  margin-left: 90px; /* Initial margin for the collapsed sidebar */
+  transition: margin-left 0.3s ease-in-out;
+}
+
+.sidebar-hover + .container {
+  margin-left: 200px; /* Adjust container when sidebar expands */
+}
