@@ -3,6 +3,7 @@ import Home from "../../pages/Home/Home.jsx";
 import { AiOutlineDoubleRight } from "react-icons/ai";
 import "./Layout.css";
 import Menu from "../Menu/Menu.jsx";
+// import About from "../../pages/About/About.jsx";
 
 const Layout = () => {
   const [hover, setHover] = useState(false);
@@ -31,21 +32,10 @@ const Layout = () => {
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
               />
-              {/* <p>
-                <AiOutlineDoubleLeft size={30} />
-              </p> */}
             </div>
           ) : (
             <>
-              <div
-                style={{
-                  width: "90px",
-                  display: "flex",
-                  justifyContent: "flex-start",
-                  alignItems: "right",
-                  flexDirection: "column",
-                }}
-              >
+              <div className="sidebar-toggle-icons">
                 <AiOutlineDoubleRight size={30} />
               </div>
               <div className="menu-icons">

@@ -3,23 +3,50 @@ body {
 }
 
 .home-container {
-  height: 500px;
-  color: white;
+  height: 200px;
+  width: 100%;
 }
 
 .home-content h1 {
-  font-family: "Great Vibes", cursive; /* Change to your chosen font */
-  color: black; /* Text color */
+  font-family: cursive;
+  color: rgb(78, 77, 77); /* Text color */
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Optional shadow for effect */
   padding-top: 30px;
   text-align: left; /* Ensure text aligns left */
 }
 .home-content h2 {
-  font-family: "Great Vibes", cursive; /* Change to your chosen font */
-  color: black; /* Text color */
+  font-family: cursive;
+  color: rgb(78, 77, 77); /* Text color */
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Optional shadow for effect */
   padding-top: 10px;
   padding-left: 30px;
-  font-size: 100px;
+  font-size: 30px;
   text-align: left; /* Ensure text aligns left */
+  white-space: nowrap; /* Prevent line breaks */
+  display: inline-block; /* Keep it inline */
+}
+
+.home-buttons {
+  /* margin-left: 150px; */
+  margin-top: 20px;
+  margin-left: 90px;
+  font-weight: bold;
+  font-family: cursive;
+  color: rgb(78, 77, 77); /* Text color */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.home-buttons .btn-cv {
+  background-color: #ccc6be;
+  margin-left: 0px;
+  padding: 10px 25px;
+  font-size: 22px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 6px 20px rgba(0, 0, 0, 0.2);
+  transition: width 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transition for width */
+}
+
+.home-buttons .btn-cv:hover {
+  opacity: 80%;
+  transition: 1s;
+  width: 200px;
 }

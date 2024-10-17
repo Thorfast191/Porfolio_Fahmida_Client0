@@ -1,0 +1,53 @@
+.education {
+  margin: 30px 0px;
+  padding: 20px;
+  margin-left: 200px; /* Adjusted for spacing */
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.education-content {
+  display: block;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
+  gap: 5px; /* Add small gap between image and text (optional) */
+}
+
+.education-content h1 {
+  color: gray;
+  font-family: cursive;
+  text-align: left; /* Align to the right */
+  margin-bottom: 20px; /* Reduce bottom margin */
+}
+
+.education-content p {
+  text-align: justify;
+  padding-right: 200px;
+  margin-top: 0; /* Remove top margin */
+}
+
+/* ======== DARK MODE ========= */
+
+#dark .education {
+  box-shadow: none;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+#dark .education-content h1 {
+  color: #b0a4a4;
+  border-bottom: 2px solid #b0a4a4;
+}
+
+/* ================================ */
+@media (max-width: 600px) {
+  .education {
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .education-content h1 {
+    margin-top: 10px;
+  }
+}

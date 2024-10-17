@@ -4,7 +4,7 @@
 
 .sidebar {
   height: 100vh;
-  background-color: #ffecb3;
+  background-color: #d2d2d2;
   width: 90px; /* Initial collapsed width */
   position: fixed;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 6px 20px rgba(0, 0, 0, 0.2);
@@ -39,8 +39,16 @@
 }
 
 .container {
-  margin-left: 90px; /* Initial margin for the collapsed sidebar */
+  margin-left: 50px; /* Initial margin for the collapsed sidebar */
   transition: margin-left 0.3s ease-in-out;
+}
+.container .container-about {
+  margin-left: 750px; /* Center horizontally */
+  margin-right: auto; /* Center horizontally */
+  margin-top: 0px; /* Adjust top margin as needed */
+  transition: margin-left 0.3s ease-in-out;
+  width: fit-content; /* Ensure the content is sized based on its content */
+  position: relative;
 }
 
 .sidebar-hover + .container {
